@@ -1,0 +1,183 @@
+\documentclass[10pt]{article}
+\usepackage{graphicx}
+\usepackage{titletoc, tocloft}
+\usepackage{amsmath}
+\usepackage{soul}
+\usepackage{color}
+\usepackage{setspace}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{etoolbox}
+\usepackage{textcomp}
+\usepackage{fullpage}
+\usepackage{pgf-pie}
+\usepackage{fontawesome5}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest} 
+\usepackage{pgfplotstable}
+\usepackage{float}
+\pgfplotsset{compat=1.17}
+\usepackage{subcaption}
+\usetikzlibrary{arrows, positioning, shadows}
+\setlength{\cftsecnumwidth}{3.5em}
+\makeatletter
+\patchcmd{\l@section}
+    {\cftsecfont #1}
+    {\cftsecfont {#1}}
+    {}
+    {}
+\makeatother
+\renewcommand\cftsecfont{\bf\MakeUppercase} 
+\renewcommand\thesection{\Roman{section}}
+\usepackage{titlesec}
+\titleformat{\section}
+  {\large\bf\scshape}{\thesection}{0.2in}{}
+\usepackage{tcolorbox}
+\usepackage{fancybox}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{multicol}
+\usepackage{tipa}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usepackage{tikz-qtree-compat}
+  \usetikzlibrary{arrows.meta}
+    \tikzset{every tree node/.style={align=center,anchor=north}}
+    \usetikzlibrary{fit}
+%\usepackage{fancyhdr}
+\pagestyle{empty}
+%\rhead{TULCON17, University of toronto}
+%\lhead{9/3/2024}
+%\fancyhfoffset{0in}
+\usepackage[utf8]{inputenc}
+\usepackage[top=0.4in, bottom=0.4in, left=0.4in, right=0.4in]{geometry}
+\usepackage{slantsc}
+\usepackage{bold-extra}
+\usepackage{amsfonts}
+\usepackage{blindtext}
+\usepackage{booktabs}
+\usepackage{multicol}
+\setlength{\parindent}{0pt} 
+\usepackage{linguex}
+\usepackage{gb4e}
+\usepackage[symbol]{footmisc}
+\usepackage{hyperref}
+\definecolor{pastelgreen}{RGB}{193, 225, 193}
+\definecolor{peach}{RGB}{255, 229, 180}
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+ 		\definecolor{camouflagegreen}{rgb}{0.47, 0.53, 0.42}
+   \definecolor{darkcyan}{rgb}{0.0, 0.55, 0.55}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=purple,
+    citecolor=camouflagegreen,
+    urlcolor=darkcyan,
+    }
+\newcommand{\myframe}[2]{
+    \begin{tcolorbox}[colback=white,colframe=black,sharp corners, title={#1}]
+        #2
+    \end{tcolorbox}
+}
+\begin{document}
+
+%TC:ignore 
+\setstretch{1.0} 
+\begin{center}
+   \Large{\textsc{\textbf{Nikola Moore}}}\\
+   \normalsize \faEnvelope\ \href{mailto:nowe.moore@gmail.com}{nowe.moore@gmail.com} $\mid$ \faPhone\ +44 749 221 0683 $\mid$ \faLink\ \href{nowemoore.com}{nowemoore.com} $\mid$ \faLinkedin\ \href{https://www.linkedin.com/in/nowemoore/}{LinkedIn} $\mid$ \faMapMarker\ London, UK
+\end{center}
+\noindent\colorbox{black}{\parbox{\textwidth}{\color{white}\textbf{\faGraduationCap\ Education}}}
+Philadelphia, Pennsylvania  \hfill 08/2021 - 05/2025\\
+\textbf{University of Pennsylvania, \textit{Cum Laude Honours BA and Research MA}.}
+\begin{itemize}[label=$\blacktriangleright$, leftmargin=20pt,
+topsep=0pt,
+itemsep=0pt]
+\item Linguistics (MA); Cognitive Science (computation \& cognition) \& Linguistics (BA). Minor: Computer Science.
+\item Activities: Penn Linguistics Society (President), Effective Altruism (Fellow), PLC49 Finance Committee (Jr Member, managed a budget of \$20,000), 2+ years of graduate research experience (Cognitive Science, LLMs).
+\end{itemize}
+\vspace{0.1in}
+Cambridge, UK \hfill									09/2023 - 06/2024\\
+\textbf{Pembroke College, University of Cambridge, \textit{visiting student.}}
+\begin{itemize}[label=$\blacktriangleright$, leftmargin=20pt,
+topsep=0pt,
+itemsep=0pt]
+\item Final mark: first-class; two independent studies (experimental quantitative and qualitative data analysis).
+\item Activities: STEM Smart Mentoring (mentor), Parmee Prize for Entrepreneurship (finalist).
+\end{itemize}
+\vspace{0.1in}
+Bratislava, Slovakia \hfill									08/2017 – 06/2021\\
+\textbf{LEAF Academy, \textit{US HS Diploma.}}
+\begin{itemize}[label=$\blacktriangleright$, leftmargin=20pt,
+topsep=0pt,
+itemsep=0pt]
+\item	Entrepreneurship (design thinking, business models, resource allocation), AP\textsuperscript{\scriptsize \textregistered} Scholar w. Distinction.
+\end{itemize}
+\vspace{0.1in}
+\textbf{Other Programmes \& Qualifications:} Google Data Analytics Certificate (in progress), AI Alignment (BlueDot Impact, 2024), ESPR (2019), Global Challenges Project Boston (2025).\\
+
+\noindent\colorbox{black}{\parbox{\textwidth}{\color{white}\textbf{\faCogs\ Relevant Projects \& Experience}}}
+Seattle, WA, USA \hfill 02/2024 – 06/2025\\
+\textbf{Code.org, \textit{intern.}}
+\begin{itemize}[label=$\blacktriangleright$, leftmargin=20pt, topsep=0pt, itemsep=0pt]
+\item Implemented an intl. PD curriculum as a user-friendly async course, used by 30+ participants.
+\end{itemize}
+\vspace{0.1in}
+Philadelphia, PA, USA \hfill 07/2024 – 04/2025\\
+\textbf{The New Mind workshop series + AI4GOOD Ideathon, \textit{lead.}}
+\begin{itemize}[label=$\blacktriangleright$, leftmargin=20pt, topsep=0pt, itemsep=0pt]
+\item Hand-designed, branded, and hosted guest-speaker workshop series + ideathon on AI safety; trained 120+ participants, managed a budget of \$14,000.
+\end{itemize}
+\vspace{0.1in}
+Philadelphia, PA, USA \hfill 12/2024 – 05/2025\\
+\textbf{Department of Linguistics, University of Pennsylvania, \textit{undergraduate teaching assistant.}}
+\begin{itemize}[label=$\blacktriangleright$, leftmargin=20pt, topsep=0pt, itemsep=0pt]
+\item Adapted 30+ problem sets to a more accessible format, fostered active learning in a class of 65+ students.
+\end{itemize}
+\vspace{0.1in}
+Philadelphia, PA, USA \hfill 12/2021 – 12/2024\\
+\textbf{Weingarten Center, University of Pennsylvania, \textit{tutor.}}
+\begin{itemize}[label=$\blacktriangleright$, leftmargin=20pt, topsep=0pt, itemsep=0pt]
+\item Tutored students and groups online and in-person, helped run revision study halls during reading days.
+\end{itemize}
+\vspace{0.1in}
+Cambridge, UK \hfill 07/2023 – 08/2023\\
+\textbf{Summer Research Programme by CSI, \textit{participant.}}
+\begin{itemize}[label=$\blacktriangleright$, leftmargin=20pt, topsep=0pt, itemsep=0pt]
+\item Completed a 3-week taught programme, delivered a research project on tech application across state institutions.
+\end{itemize}
+\vspace{0.1in}
+Gashora, Rwanda \hfill 05/2022 – 07/2022\\
+\textbf{Gashora Girls Academy of Science and Technology, \textit{teaching fellow.}}
+\begin{itemize}[label=$\blacktriangleright$, leftmargin=20pt, topsep=0pt, itemsep=0pt]
+\item Designed a term worth of curriculum for two cohorts and contributed to residential life (dining and college advice).
+\end{itemize}
+\vspace{0.1in}
+Bratislava, Slovakia \hfill 05/2022 – 08/2022\\
+\textbf{The Ministry of Finance, \textit{project management intern.}}
+\begin{itemize}[label=$\blacktriangleright$, leftmargin=20pt, topsep=0pt, itemsep=0pt]
+\item Implemented an automated system to optimise communication across the government's analytical units.\\
+\end{itemize}
+\noindent\colorbox{black}{\parbox{\textwidth}{\color{white}\textbf{\faSeedling\ Recent Achievements}}}
+
+\textbf{Spring 2025:} FSRDC-affiliated data analysis \& visualisation project selected for U.S. Census Bureau presentation.\\
+\textbf{Spring 2025:}	Hoenigswald Prize (awarded for a Linguistics thesis w. a significant scientific contribution).\\
+\textbf{Spring 2025:} 	Draw Down the Lightning grant of \$8,500 by President J. L. Jameson’s Office (for AI4Good Ideathon).\\
+\textbf{Fall 2024: }	Pinkel Fund grant of \$2,000 for experimental research \& Penn Academic Travel Grant.\\
+\textbf{Fall 2024: }	Effective Ventures grant of \$5,000 (for AI safety workshop series The New Mind).\\
+
+\noindent\colorbox{black}{\parbox{\textwidth}{\color{white}\textbf{\faLightbulb\ Other Skills}}}
+\textbf{Languages:} English (C2) $\bullet$ Czech (C2) $\bullet$ Slovak (C2) $\bullet$ German (rusty) $\bullet$ Polish (rusty) $\bullet$ Python $\bullet$ Java
+
+\textbf{Tech:} MS Office $\bullet$ \LaTeX\ $\bullet$ (some) web design (JS React, HTML, CSS) $\bullet$ data analytics (SQL, BigQuery)
+
+\textbf{Interests:} Games (detective stories, sci-fi) $\bullet$ Languages $\bullet$ Late-Night Chats $\bullet$ Creative Writing
+
+\textbf{Volunteering:} ESPR (Jr Counsellor, 2022); SPARC (Jr Counsellor, 2022; 2025)
+
+
+\end{document}
